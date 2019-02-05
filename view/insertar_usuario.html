@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>  
+      <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>            
+      <script type="text/javascript" src="../controllers/insertar_usuario.js"></script>      
+      <title>Registrar Cliente</title>
+      <meta charset="utf-8">            
+   </head>
+   <body>   	
+      <h2>Formulario de Registro</h2>
+   <div class="group">
+     <form>
+
+      <label>Tipo De Documento:</label>
+      <select id="tipo_documento"> 			 
+            <option value="T.I">Tarjeta De Identidad</option>
+            <option value="C.C">Cedula De Ciudadania</option>        
+      </select>
+      <br>
+
+      <label>Numero De Documento:</label>
+      <input type="number" id="numero_documento"/>
+      <br>
+
+      <label>Contraseña</label>
+      <input type="password" id="clave1" />
+
+      <label>Repetir Contraseña</label>
+      <input type="password" id="clave2"/>  
+      <br>  
+
+      <label>Nombres:</label>
+      <input type="text" onkeypress="return Validar(event)" id="nombres"/>
+
+      <label>Apellidos:</label>
+      <input type="text" onkeypress="return Validar(event)" id="apellidos"/>
+      <br>
+
+      <label>Fecha De Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento"/>
+      <br>
+
+      <label>Genero:</label>
+      <label>Masculino</label>
+      <input type="radio" name="genero" value="M">
+      <label>Femenino</label>      
+      <input type="radio" name="genero" value="F">
+      <br>
+
+      <label>Tipo De Sangre:</label>
+      <label>Grupo:</label>
+      <label>A</label>
+      <input type="radio" name="grupo" value="A">
+      <label>B</label>
+      <input type="radio" name="grupo" value="B">
+      <label>O</label>
+      <input type="radio" name="grupo" value="O">
+      <label>B</label>
+		<input type="radio" name="grupo" value="B">
+      <br>
+
+      <label>Rh:</label>
+      <label>Positivo</label>
+      <input type="radio" name="rh" value="+">
+      <label>Negativo</label>
+      <input type="radio" name="rh" value="-">
+      <br>     
+
+      <input type="submit" value="Registrar"/>   
+     </form>
+     <div id="info"></div>
+
+     
+
+   </div>              
+   </body>
+</html>

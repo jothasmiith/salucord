@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <link rel="stylesheet" href="style_registro_cliente.css" type="text/css" media="screen">      
+      <title>Registrar Cliente</title>
+      <meta charset="utf-8">
+            
+   </head>
+   <body background="images/bkg.jpg">
+   	<center>
+      <h2>Formulario de Registro</h2>
+   <div class="group">
+     <form action="insertar_cliente.php" method="POST" autocomplete="off">
+
+      <label for="id">Tipo de documento <span>(requerido)</span></label>
+      <input type="text" name="id" class="form-input" required/>
+
+      <label for="id">Numero de documento <span>(requerido)</span></label>
+      <input type="text" name="id" class="form-input" required/>
+         
+      <label for="name">Nombres <span>(requerido)</span></label>
+      <input type="text" name="name" class="form-input" />
+         
+      <label for="lastn">Apellidos <span>(requerido)</span></label>
+      <input type="text" name="lastname" class="form-input" required/>
+            
+      <label for="addres">Fecha de nacimiento <span>(requerido)</span></label>
+      <input type="text" name="address" class="form-input" / required>
+
+      <label for="edad">Tipo de sangre <span>(requerido)</span></label>
+      <input type="text" name="edad" class="form-input" / required>
+
+      <label for="cel">Nombre de usuario <span>(requerido)</span></label>
+      <input type="text" name="tel" class="form-input" / required>
+
+      Genero:<br>
+      <input type="radio" name="gen" value="M">Masculino
+      <input type="radio" name="gen" value="F">Femenino<br>
+
+      <label for="sex">Usuario <span>(requerido)</span></label>
+      <input type="text" name="sexo" class="form-input" / required>
+
+      <label for="sex">Contraseña <span>(requerido)</span></label>
+      <input type="text" name="sexo" class="form-input" / required>
+               
+        <input class="form-btn" name="submit" type="submit" value="Registrar" /> 
+
+         <div class="container-login100-form-btn">
+           <button class="login100-form-btn" onclick="location.href='cerrar_Sesion.php'">
+              Registrarse
+            </button>         
+          </div>
+
+          
+     </form>
+
+
+      
+
+
+   </div>  
+
+
+
+
+  
+           </center>
+
+      
+
+      
+   </body>
+</html>
+
